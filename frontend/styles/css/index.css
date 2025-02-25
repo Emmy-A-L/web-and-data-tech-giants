@@ -1,0 +1,414 @@
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Background Video Styling */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+/* Header Section Styling */
+.header-section {
+    position: relative;
+    min-height: 100vh;  /* Ensure the header takes full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#animated-heading {
+    font-size: 78px;
+    font-weight: bold;
+    max-width: 800px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    background-image: linear-gradient()
+}
+
+#description {
+    font-size: 24px;
+    max-width: 800px;
+    margin-top: 20px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+    color: #ddd;
+}
+#main-logo {
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#wad-logo {
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(99, 99, 99, 0.6); /* Slight transparency */
+    width: 80%; /* Set to 80% of the screen */
+    margin: 20px auto; /* Center it horizontally */
+    padding: 10px 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Floating shadow effect */
+    border-radius: 15px; /* Rounded corners for floating effect */
+    backdrop-filter: blur(10px); /* Blur the background behind the navbar */
+    position: fixed;
+    top: 1px; /* the navbar a little above the bottom of the page */
+    left: 0;
+    right: 0;
+    z-index: 100; /* Ensure it stays on top of other elements */
+}
+
+.brand img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    color: #11b103;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #5f5f5f;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    top: 100%; /* Position dropdown below the "Profiles" link */
+    backdrop-filter: blur(10px);
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #2c2c2c;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #b3fcb5; /* Green highlight on hover */
+    color: #fff;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: #2c2c2c;
+}
+
+/* Optional: Add arrow to indicate dropdown */
+.dropdown .dropbtn:after {
+    content: ' ▼';
+    font-size: 12px;
+    margin-left: 3px;
+}
+.whatsapp-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Main Profile Section Styling */
+#top-talents {
+    margin: 20px 0;
+}
+/* Profiles Section */
+.profiles {
+    padding: 50px 0;
+    background-image: linear-gradient( rgb(0, 53, 0, 0.7), rgb(0, 124, 0, 0.7) );
+    text-align: center;
+}
+
+.profile-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Profile Card Styles */
+.profile-card {
+    width: 250px;
+    height: 350px;
+    perspective: 1000px;
+    position: relative;
+    border-radius: 15px;
+    color: #ececec;
+}
+
+.profile-front, .profile-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.profile-front {
+    background-color: #20291c, 80;
+    text-align: center;
+    z-index: 2;
+    gap: 40px;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+}
+.image-web-dev {
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px;
+    background-image: url(/frontend/asset/web-developer.png);
+    background-size: cover; /* Ensure background images cover the element */
+    background-position: center;
+    z-index: 3;
+}
+.image-analyst {
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px;
+    background-image: url(/frontend/asset/data-analysis.jpg);
+    z-index: 3;
+    background-size: cover; /* Ensure background images cover the element */
+    background-position: center;
+}
+
+.profile-back {
+    background-color: #4caf50;
+    color: #fff;
+    transform: rotateY(180deg);
+    padding: 20px;
+    height: fit-content;
+}
+.profile-link{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+}
+.profile-card:hover .profile-front {
+    transform: rotateY(180deg);
+}
+
+.profile-card:hover .profile-back {
+    transform: rotateY(360deg);
+}
+
+
+/* Skills Section */
+.skills {
+    margin-top: 10px;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.skill p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 10px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.progress {
+    background-color: #fff;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Rating */
+.rating {
+    margin-top: 15px;
+}
+
+.rating span {
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Join Our Team Section */
+.join-team {
+    background-image: linear-gradient(rgb(0, 53, 0), rgb(2, 73, 2)); /* Light green background for this section */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.join-team .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.join-team h2 {
+    font-size: 36px;
+    color: #4CAF50; /* Main green color */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.join-team p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.cta-button {
+    background-color: #4CAF50; /* Green background for the button */
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Optional: Join Form Styling */
+.join-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.join-form input,
+.join-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.join-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.join-form button:hover {
+    background-color: #45a049;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .join-team h2 {
+        font-size: 28px;
+    }
+
+    .join-team p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+}
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 600px) {
+    .header-section h1 {
+        font-size: 32px;
+    }
+    .profiles {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-card {
+        width: 90%;
+    }
+}
+/* Media Queries for Responsiveness */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .profile-card {
+        width: 45%;
+    }
+}

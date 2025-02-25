@@ -1,0 +1,127 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #e5e5e5;
+    background: linear-gradient(#1e293b, #1e293b, #1e293b, #047857, #34d399, #047857, #374151, #1e293b, #1e293b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: 90vh;
+  }
+  
+  /* Profile Section (Sidebar) */
+  .profile-section {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+    color: #e5e5e5;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .profile-section h1 {
+    font-size: 1.8rem;
+    margin: 15px 0;
+  }
+  
+  .job-title {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  .profile-section {
+    justify-content: space-between;
+  }
+
+  #profile-details p {
+    margin: 8px 0;
+  }
+  
+  #profile-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .profile-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Content Section */
+  .content-section {
+    flex: 2.5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+    border-radius: 0 10px 10px 0;
+    color: #f1f1f1;
+  }
+  
+  /* Content Cards */
+  .content-card {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .content-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  
+  .content-card p,
+  .content-card ul {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .skills-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  
+  .project {
+    margin-top: 15px;
+  }
+  
+  /* Scrollbar styling */
+  .content-section::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .content-section::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .content-section::-webkit-scrollbar-thumb {
+    background-color: #585858;
+    border-radius: 10px;
+  }
+  

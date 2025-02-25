@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="styles/data_analyst.css">
+</head>
+<body>
+    
+    <div class="container">
+        
+        <!-- Sidebar with Profile Information -->
+        <aside class="profile-section">
+            <div id="profile-details">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+                <h1>John Doe</h1>
+                <p class="job-title">Data Analyst</p>
+            </div>
+
+            <div class="skills">
+                <h2>Skills</h2>
+                <div class="skills-list">
+                    <div>Python</div>
+                    <div>SQL</div>
+                    <div>Power BI</div>
+                    <div>Excel</div>
+                    <div>R</div>
+                    <div>Machine Learning</div>
+                    <div>Data visualization</div>
+                    <div>Statistical Analysis</div>
+                    
+                </div>
+            </div>
+            
+            <div id="profile-links">
+                <p>📍 New York, NY</p>
+                <p>🌐 <a href="https://linkedin.com/in/johndoe" target="_blank">LinkedIn</a></p>
+                <p>📧 <a href="mailto:johndoe@example.com">johndoe@example.com</a></p>
+            
+            </div>
+
+            
+        </aside>
+        
+        <!-- Main Content Sections -->
+        <main class="content-section">
+        
+            About Section
+            <section id="about" class="content-card">
+                <h2>About Me</h2>
+                <p>I am a data analyst specializing in transforming data into strategic insights. Experienced in predictive modeling, data visualization, and complex problem solving.</p>
+            </section>
+            
+            <!-- Experience Section -->
+            <section id="experience" class="content-card">
+                <h2>Experience</h2>
+                <ul>
+                <li><strong>Data Analyst</strong> - ABC Corp, 2021-2023</li>
+                <li><strong>Junior Analyst</strong> - XYZ Ltd, 2019-2021</li>
+                </ul>
+            </section>
+            
+            <!-- Projects Section -->
+            <section id="projects" class="content-card">
+                <h2>Projects</h2>
+                <div class="project">
+                <h3>Sales Forecast Model</h3>
+                <p>Created a predictive model for quarterly sales, improving forecast accuracy by 20%.</p>
+                </div>
+                <div class="project">
+                <h3>Customer Segmentation</h3>
+                <p>Developed clustering analysis to identify key customer groups, boosting targeted marketing efficiency.</p>
+                </div>
+            </section>
+            
+            <!-- Contact Section -->
+            <section id="contact" class="content-card">
+                <h2>Contact</h2>
+                <p>If you'd like to discuss opportunities, please reach out via email or LinkedIn.</p>
+            </section>
+        </main>
+    </div>
+      
+
+  <script>
+    // Greeting message based on time
+        document.addEventListener("DOMContentLoaded", function() {
+            const greetingElement = document.createElement("p");
+            const hours = new Date().getHours();
+            let greetingText = "Welcome to my portfolio!";
+
+            if (hours < 12) {
+                greetingText = "Good Morning!";
+            } else if (hours < 18) {
+                greetingText = "Good Afternoon!";
+            } else {
+                greetingText = "Good Evening!";
+            }
+
+            greetingElement.textContent = greetingText;
+            document.querySelector("header .container").appendChild(greetingElement);
+        });
+
+  </script>
+</body>
+</html>
