@@ -218,7 +218,7 @@ body {
     width: 100%;
     height: 70%;
     margin-bottom: 10px;
-    background-image: url(/frontend/asset/web-developer.png);
+    background-image: url(./asset/web-developer.png);
     background-size: cover; /* Ensure background images cover the element */
     background-position: center;
     z-index: 3;
@@ -227,7 +227,7 @@ body {
     width: 100%;
     height: 70%;
     margin-bottom: 10px;
-    background-image: url(/frontend/asset/data-analysis.jpg);
+    background-image: url(./asset/data-analysis.jpg);
     z-index: 3;
     background-size: cover; /* Ensure background images cover the element */
     background-position: center;
